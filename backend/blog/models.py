@@ -1,11 +1,6 @@
 from django.db import models
 from datetime import datetime
-from django.forms import ModelForm
 from django.template.defaultfilters import slugify
-
-def randomString(stringLength=8):
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(stringLength))
 
 class Categories(models.TextChoices):
         WORLD = 'world'
